@@ -12,9 +12,15 @@
 
 (defn load-bootstrap []
   (y/parse-string (slurp "src/main/resources/bootstrap.yml")))
-  
+
+(defn get-name [bootstrap]
+  (get-in bootstrap [:spring :application :name]))
+
 (defn get-config [bootstrap]
-  (get-in bootstrap [:spring :cloud :config]))
+  (let [config (get-in bootstrap [:spring :cloud :config])]
+    (if (:name config)
+      (config)
+      (assoc config :name (get-name bootstrap)))))
 
 (defn get-vault [bootstrap]
   (get-in bootstrap [:spring :cloud :vault]))
