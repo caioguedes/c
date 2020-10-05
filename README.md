@@ -1,4 +1,6 @@
 # C
+[![Build Status](https://travis-ci.org/caioguedes/c.svg?branch=main)](https://travis-ci.org/caioguedes/c)
+
 Lazy cli tool (even on the name) for personal ordinary tasks. It may not fit your personal tasks.
 
 ## Requirements
