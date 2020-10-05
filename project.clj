@@ -8,4 +8,5 @@
                  [clojure-term-colors "0.1.0"]]
   :main ^:skip-aot c.core
   :target-path "target/%s"
+  :plugins [[lein-cloverage "1.2.1"]]
   :profiles {:uberjar {:aot :all}})

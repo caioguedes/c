@@ -1,5 +1,6 @@
 # C
 [![Build Status](https://travis-ci.org/caioguedes/c.svg?branch=main)](https://travis-ci.org/caioguedes/c)
+[![codecov](https://codecov.io/gh/caioguedes/c/branch/main/graph/badge.svg)](https://codecov.io/gh/caioguedes/c)
 
 Lazy cli tool (even on the name) for personal ordinary tasks. It may not fit your personal tasks.
 
